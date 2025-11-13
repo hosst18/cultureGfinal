@@ -1,0 +1,19 @@
+[tool.ruff]
+# Longueur max des lignes
+line-length = 100
+
+# Version cible de Python
+target-version = "py311"
+
+# Dossiers à ignorer
+exclude = ["data", ".venv", "__pycache__"]
+
+# Règles activées
+extend-select = ["E", "F", "I"]
+
+# Règles ignorées (tu peux les ajuster)
+ignore = ["E501"]  # ignore la longueur de ligne si tu veux plus de liberté
+
+[tool.ruff.lint.isort]
+# Classe les imports proprement (standard / tiers / local)
+known-first-party = ["bot"]
